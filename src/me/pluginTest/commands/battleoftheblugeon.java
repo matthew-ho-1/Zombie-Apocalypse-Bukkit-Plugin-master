@@ -65,7 +65,7 @@ public class battleoftheblugeon implements CommandExecutor {
         zombie.addPotionEffect(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 1000000, 3));
         List<Player> players=w.getPlayers();
         for (Player player: players){
-            player.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 120000, 0));
+            player.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 12000, 0));
         }
         zombie.getServer().broadcastMessage("NOTE: Darkness fills all...");
         zombie.getServer().broadcastMessage("???????????????????????");

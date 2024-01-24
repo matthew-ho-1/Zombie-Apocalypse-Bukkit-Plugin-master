@@ -174,6 +174,21 @@ public class ZombieTypes implements Listener {
   }
 
   @EventHandler
+  public void blugeonHealthChecker(EntityDamageEvent e) {
+    if (e.getEntity() instanceof Zombie && e.getEntity().hasMetadata("blugeon")) {
+      Zombie bulwark = (Zombie) e.getEntity();
+      //if (!bulwark.hasPotionEffect(PotionEffectType.ABSORPTION)) {
+      // bulwark.getServer().broadcastMessage("Health: " + (bulwark
+      // .getHealth() -
+      //         e.getDamage()));
+      //} else {
+      int HP= (int) (bulwark.getHealth());
+      bulwark.setCustomName("The Blugeon: "+HP);
+      //}
+    }
+  }
+
+  @EventHandler
   public void tankFallDamage(EntityDamageEvent e) {
     if (e.getEntity() instanceof Zombie && e.getEntity().hasMetadata("Tank")) {
       if (e.getCause().equals(EntityDamageEvent.DamageCause.FALL)) {
