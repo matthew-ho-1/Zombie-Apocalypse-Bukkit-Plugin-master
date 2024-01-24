@@ -36,6 +36,18 @@ public class ZombieRaid implements Listener {
     }
 
     @EventHandler
+    public void empoweredEnderman(CreatureSpawnEvent e){
+        if (e.getEntity() instanceof Enderman
+                && e.getEntity().getWorld().getEnvironment().equals(World.Environment.THE_END)){
+            Enderman enderman = (Enderman) e.getEntity();
+            enderman.addPotionEffect(new PotionEffect(PotionEffectType.HEAL, 1, 9));
+            enderman.addPotionEffect(new PotionEffect(PotionEffectType.HEALTH_BOOST, 1000000, 9));
+            enderman.addPotionEffect(new PotionEffect(PotionEffectType.REGENERATION, 1000000, 1));
+            enderman.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 1000000, 0));
+        }
+    }
+
+    @EventHandler
     public void witherDeath(EntityDeathEvent e) {
         if (e.getEntity() instanceof Wither
                 && e.getEntity().getWorld().getEnvironment().equals(World.Environment.THE_END)
