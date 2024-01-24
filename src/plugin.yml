@@ -1,0 +1,34 @@
+name: MC-Plugin-test
+version: 1.0
+author: test
+main: me.pluginTest.Main
+description: Spawns a zombie
+
+commands:
+  summontank:
+    aliases: [tank]
+    description: /tank to spawn tank
+  summonhorde:
+    aliases: [horde]
+    description: /horde to spawn horde
+  summonjumper:
+    aliases: [jumper]
+    description: /jumper to spawn jumper
+  summonwailer:
+    aliases: [wailer]
+    description: ari is awesome
+  summongiant:
+    aliases: [gianttest]
+  summonleech:
+    aliases: [leech]
+    description: /leech
+  summonbulwark:
+    aliases: [bulwark]
+  summonwitch:
+    aliases: [witch]
+  summonbalifios:
+    aliases: [battleofbalifios]
+  summonleviathan:
+    aliases: [battleofleviathan]
+  summonblugeon:
+    aliases: [theblugeon]
