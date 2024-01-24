@@ -31,4 +31,4 @@ commands:
   summonleviathan:
     aliases: [battleofleviathan]
   summonblugeon:
-    aliases: [theblugeon]
+    aliases: [battleoftheblugeon]
