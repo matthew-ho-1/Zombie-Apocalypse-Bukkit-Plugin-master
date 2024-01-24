@@ -61,7 +61,7 @@ public class battleoftheblugeon implements CommandExecutor {
         zombie.getEquipment().setBootsDropChance(1f);
         zombie.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 1000000, 1));
         zombie.addPotionEffect(new PotionEffect(PotionEffectType.HEALTH_BOOST, 1000000, 119));
-        zombie.addPotionEffect(new PotionEffect(PotionEffectType.HARM, 2, 30));
+        zombie.addPotionEffect(new PotionEffect(PotionEffectType.HARM, 2, 20));
         zombie.addPotionEffect(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 1000000, 3));
         List<Player> players=w.getPlayers();
         for (Player player: players){
