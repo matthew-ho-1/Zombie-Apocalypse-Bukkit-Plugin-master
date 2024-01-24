@@ -42,7 +42,7 @@ public class battleoftheblugeon implements CommandExecutor {
         chestplate.addEnchantment(Enchantment.PROTECTION_FIRE, 3);
         chestplate.addEnchantment(Enchantment.PROTECTION_PROJECTILE, 3);
         chestplate.addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 4);
-        chestplate.addUnsafeEnchantment(Enchantment.DURABILITY, 10);
+        chestplate.addUnsafeEnchantment(Enchantment.DURABILITY, 20);
         ItemStack boots = new ItemStack(Material.NETHERITE_BOOTS);
         boots.addEnchantment(Enchantment.PROTECTION_FIRE, 3);
         boots.addEnchantment(Enchantment.PROTECTION_PROJECTILE, 3);
