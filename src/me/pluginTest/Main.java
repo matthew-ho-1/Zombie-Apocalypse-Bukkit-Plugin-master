@@ -27,5 +27,6 @@ public class Main extends JavaPlugin implements Listener {
         new battleofbalifios(this);
         new battleofleviathan(this);
         new battleoftheblugeon(this);
+        new AngelOfDeath(this);
     }
 }

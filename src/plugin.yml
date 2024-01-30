@@ -32,3 +32,5 @@ commands:
     aliases: [battleofleviathan]
   summonblugeon:
     aliases: [battleoftheblugeon]
+  angelofdeath:
+    aliases: [angelofdeath]
